@@ -24,18 +24,60 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!-- Add your site or application content here -->
+<nav>
+  <div class="container">
+    <ul>
+      <li class="home active"><a href="#home">Home</a></li>
+      <li class="about"><a href="#z-kim-nadajemy">Z kim nadajemy</a></li>
+      <li class="contact"><a href="#o-nas">O nas</a></li>
+      <li class="contact"><a href="#posluchaj">Posłuchaj</a></li>
+      <li class="footer"><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+<section id="home">
+  <h1>Home</h1>
+</section>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<section id="z-kim-nadajemy">
+  <h1>Z kim nadajemy</h1>
+</section>
+
+<section id="o-nas">
+  <h1>o nas</h1>
+</section>
+
+<section id="posluchaj">
+  <h1>Contact</h1>
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/pBegh7M28_o" title="DEMO AUDIO MARCIN STEC ZOFFU.PL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section id="kontakt">
+  <h1>kontakt</h1>
+</section>
+
+<footer>
+  © 2022 by ZOFFU.pl | Wszelkie prawa zastrzeżone
+</footer>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
