@@ -1,11 +1,13 @@
 const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav .container ul li");
+const navLi = document.querySelectorAll("nav .menu-container ul li");
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+    if (pageYOffset >= sectionTop - sectionHeight / 4) {
+      console.log(pageYOffset);
+      console.log(current);
       current = section.getAttribute("id");
     }
   });

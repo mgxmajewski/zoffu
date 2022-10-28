@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -93,68 +93,157 @@ textarea {
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
-  font-family: "Roboto Mono";
+  font-family: "Noto", sans-serif;
   font-size: 24px;
   scroll-behavior: smooth;
+  background-color: #151514;
+  color: white;
 }
+
 section {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  background-color: gray;
+  background-color: #151514;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 #home {
-  background-color: royalblue;
+  height:85vw;
+  background: no-repeat top/60% url("../img/hero-mobile.png");
+  display: grid;
+  justify-items: center;
 }
 
-#z-kim-nadajemy{
-  background-color: aquamarine;
+@media (min-width: 800px) {
+  #home {
+    height: 60vw;
+    /*background: no-repeat top/60% url("../img/hero-desktop.png");*/
+  }
 }
 
-#o-nas{
+#home h1 {
+  padding-top: 32vw;
+  padding-bottom: 0;
+  font-weight: 300;
+  font-size: 3vw;
+  height: 10vw;
+}
+
+
+@media (min-width: 800px) {
+  #home h1{
+    padding-top: 18vw;
+    /*background: no-repeat top/60% url("../img/hero-desktop.png");*/
+  }
+}
+
+#home div {
+  /*max-width: 600px;*/
+  /*justify-self: left;*/
+  /*padding-left: 10%;*/
+}
+
+
+#home div h2 {
+  font-size: 1.7vw;
+}
+
+
+#home div p {
+  padding-right: 30vw;
+  font-size: 1vw;
+}
+
+
+#home h1 strong {
+  font-weight: 900;
+}
+
+@media (min-width: 800px) {
+  #home {
+    background: no-repeat top/60% url("../img/hero-desktop.png");
+  }
+}
+
+#z-kim-nadajemy {
+  background-color: #151514;
+}
+
+#o-nas {
   background-color: crimson;
 }
 
-#posluchaj{
+#posluchaj {
   background-color: #14dca7;
 }
 
-#kontakt{
-    background-color: #aa14dc;
+#kontakt {
+  background-color: #aa14dc;
 }
 
 nav {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: transparent;
+  font-size: 1.3vw;
 }
-nav .container {
+
+nav .menu-container {
+  height: 0;
   width: 90%;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   margin: 0 auto;
   text-align: center;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  /*padding: 10px;*/
 }
-nav .container ul li {
+
+.menu-container {
+  /*height: 10px;*/
+  /*border-bottom: 1px solid white;*/
+}
+
+.menu-container img {
+  padding: 2vw;
+}
+
+.menu-container ul {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .menu-container ul {
+    padding: 2vw;
+    display: block;
+  }
+}
+
+nav .menu-container ul li {
   display: inline-block;
 }
-nav .container ul li a {
+
+nav .menu-container ul li a {
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
-  color: black;
+  color: white;
 }
-nav .container ul li.active {
-  background-color: crimson;
-  transition: 0.3s ease background-color;
+
+nav .menu-container ul li.active {
+  /*background-color: crimson;*/
+  /*transition: 0.3s ease background-color;*/
 }
-nav .container ul li.active a {
-  color: rgb(255, 255, 255);
+
+nav .menu-container ul li.active a {
+  color: rgb(148, 148, 148);
 }
 
 /* ==========================================================================
