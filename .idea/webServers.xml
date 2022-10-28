@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7fff46c3-eefc-4e72-a873-a0b8543ffd1f" name="zoffu">
+        <fileTransfer rootFolder="/home/marcel/public_html" accessType="SFTP" host="serwer2237564.home.pl" port="22222" sshConfigId="41abd990-88c0-47cf-a299-a20792476490" sshConfig="marcel@zoffu.pl@serwer2237564.home.pl:22222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
