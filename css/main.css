@@ -100,6 +100,7 @@ html {
   scroll-behavior: smooth;
   background-color: #151514;
   color: white;
+  /*scrollbar-gutter: stable both-edges;*/
 }
 
 section {
@@ -110,13 +111,21 @@ section {
   /*align-items: center;*/
   justify-content: center;
   /*text-transform: uppercase;*/
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
+@media (min-width: 800px) {
+  section {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+
+
 #home {
-  height:85vw;
-  background: no-repeat top/60% url("../img/hero-mobile.png");
+  height: 140vw;
+  background: no-repeat top/90% url("../img/hero-mobile.png");
   display: grid;
   justify-items: center;
 }
@@ -124,41 +133,80 @@ section {
 @media (min-width: 800px) {
   #home {
     height: 60vw;
-    /*background: no-repeat top/60% url("../img/hero-desktop.png");*/
+    background: no-repeat top/60% url("../img/hero-desktop.png");
   }
 }
 
 #home h1 {
-  padding-top: 32vw;
+  padding-top: 31vw;
   padding-bottom: 0;
-  font-weight: 300;
-  font-size: 3vw;
+  font-weight: 100;
+  font-size: 7vw;
   height: 10vw;
+  padding-left: 20vw;
+  justify-items: center;
+  text-align: center;
+  margin-left: -20vw;
+  line-height: 1.1;
+}
+
+@media (min-width: 800px) {
+  #home h1 {
+    margin-left: -16vw;
+    padding-top: 32vw;
+    font-size: 3vw;
+    height: 60vw;
+  }
 }
 
 
 @media (min-width: 800px) {
-  #home h1{
+  #home h1 {
     padding-top: 18vw;
-    /*background: no-repeat top/60% url("../img/hero-desktop.png");*/
   }
 }
 
 #home div {
-  /*max-width: 600px;*/
-  /*justify-self: left;*/
-  /*padding-left: 10%;*/
+  padding-top: 20vw;
 }
 
+
+@media (min-width: 800px) {
+  #home div {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 800px) {
+}
 
 #home div h2 {
-  font-size: 1.7vw;
+  font-size: 6vw;
 }
 
+@media (min-width: 800px) {
+  #home div h2 {
+    font-size: 1.7vw;
+  }
+}
 
 #home div p {
-  padding-right: 30vw;
-  font-size: 1vw;
+  padding-top: 4vw;
+  padding-right: 1vw;
+  font-size: 4vw;
+}
+
+@media (min-width: 800px) {
+  #home div p {
+    padding-right: 30vw;
+    font-size: 1vw;
+  }
 }
 
 
@@ -166,14 +214,14 @@ section {
   font-weight: 900;
 }
 
-@media (min-width: 800px) {
-  #home {
-    background: no-repeat top/60% url("../img/hero-desktop.png");
-  }
-}
+/*@media (min-width: 800px) {*/
+/*  #home {*/
+/*    background: no-repeat top/60% url("../img/hero-desktop.png");*/
+/*  }*/
+/*}*/
 
 #z-kim-nadajemy {
-  background-color: #151514;
+  background-color: #43dc43;
 }
 
 #o-nas {
