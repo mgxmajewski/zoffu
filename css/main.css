@@ -94,7 +94,7 @@ textarea {
   box-sizing: border-box;
 }
 
-body{
+body {
   scrollbar-gutter: stable both-edges;
 }
 
@@ -127,7 +127,7 @@ section {
 
 
 #home {
-  height: 140vw;
+  height: 130vw;
   background: no-repeat top/90% url("../img/hero-mobile.png");
   display: grid;
   justify-items: center;
@@ -183,21 +183,7 @@ section {
   }
 }
 
-@media (min-width: 800px) {
-}
-
-@media (min-width: 800px) {
-}
-
-@media (min-width: 800px) {
-}
-
-@media (min-width: 800px) {
-}
-
-@media (min-width: 800px) {
-}
-
+/*HOME*/
 #home div h2 {
   font-size: 6vw;
 }
@@ -229,6 +215,7 @@ section {
 /*  }*/
 /*}*/
 
+/*Z KIM NADAJEMY*/
 #z-kim-nadajemy {
   background-color: #151514;
 }
@@ -255,7 +242,7 @@ section {
   font-weight: 100;
   line-height: 2;
   padding-top: 4vw;
-  padding-right: 10vw;
+  padding-right: 14vw;
   text-align: left;
   font-size: 3.5vw;
 }
@@ -272,16 +259,83 @@ section {
   }
 }
 
+/*O NAS*/
 #o-nas {
   background-color: crimson;
 }
 
+/*POSLUCHAJ*/
 #posluchaj {
-  background-color: #14dca7;
+  /*background-color: #14dca7;*/
+  background-color: #151514;
+  /*background-color: #ffffff;*/
+
+  display: block;
 }
 
+#posluchaj div {
+  /*color: #151514;*/
+  padding-top: 10vw;
+}
+
+@media (min-width: 800px) {
+  #posluchaj div {
+    padding-top: 2vw;
+  }
+}
+
+/*HOME*/
+#posluchaj div h2 {
+  font-size: 6vw;
+}
+
+@media (min-width: 800px) {
+  #posluchaj div h2 {
+    font-size: 1.7vw;
+  }
+}
+
+#posluchaj div p {
+  font-weight: 100;
+  padding-top: 4vw;
+  padding-right: 2vw;
+  font-size: 3.5vw;
+}
+
+@media (min-width: 800px) {
+  #posluchaj div p {
+    padding-top: 1vw;
+    padding-right: 41vw;
+    font-size: 1vw;
+  }
+}
+
+#posluchaj .video-wrapper{
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-right: 2vw;
+  max-width: 1100px;
+  /*width: 100vw;*/
+  /*background-color: white;*/
+}
+
+#posluchaj iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  align-items: start;
+}
+
+/*KONTAKT*/
 #kontakt {
   background-color: #aa14dc;
+}
+
+footer{
+  border-top: 1px solid #474741;
+  color: #474741;
+  padding: .5vw 1vw 1vw 1vw;
+  font-weight: lighter;
+  text-align: right;
 }
 
 nav {
