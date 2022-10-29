@@ -94,17 +94,20 @@ textarea {
   box-sizing: border-box;
 }
 
+body{
+  scrollbar-gutter: stable both-edges;
+}
+
 html {
   font-family: 'Noto Sans', sans-serif;
   font-size: 24px;
   scroll-behavior: smooth;
   background-color: #151514;
   color: white;
-  scrollbar-gutter: stable both-edges;
 }
 
 section {
-  height: 80vh;
+  /*height: 80vh;*/
   width: 100%;
   background-color: #151514;
   display: flex;
@@ -112,7 +115,7 @@ section {
   justify-content: center;
   /*text-transform: uppercase;*/
   padding-left: 5vw;
-  padding-right: 5vw;
+  padding-right: 2vw;
 }
 
 @media (min-width: 800px) {
@@ -174,7 +177,6 @@ section {
   padding-top: 20vw;
 }
 
-
 @media (min-width: 800px) {
   #home div {
     padding-top: 10vw;
@@ -209,8 +211,8 @@ section {
 #home div p {
   font-weight: 100;
   padding-top: 4vw;
-  padding-right: 1vw;
-  font-size: 4vw;
+  padding-right: 2vw;
+  font-size: 3.5vw;
 }
 
 @media (min-width: 800px) {
@@ -228,7 +230,46 @@ section {
 /*}*/
 
 #z-kim-nadajemy {
-  background-color: #43dc43;
+  background-color: #151514;
+}
+
+/*@media (min-width: 800px) {*/
+/*  #z-kim-nadajemy div {*/
+/*    !*background-color: chocolate;*!*/
+/*  }*/
+/*}*/
+
+#z-kim-nadajemy div h2 {
+  font-size: 6vw;
+}
+
+@media (min-width: 800px) {
+  #z-kim-nadajemy div h2 {
+    font-size: 1.7vw;
+    text-align: right;
+    /*width: 50vw;*/
+  }
+}
+
+#z-kim-nadajemy div p {
+  font-weight: 100;
+  line-height: 2;
+  padding-top: 4vw;
+  padding-right: 10vw;
+  text-align: left;
+  font-size: 3.5vw;
+}
+
+@media (min-width: 800px) {
+  #z-kim-nadajemy div p {
+    line-height: 2;
+    white-space: nowrap;
+    padding-top: 1vw;
+    padding-right: 0;
+    padding-left: 30vw;
+    font-size: 1vw;
+    text-align: right;
+  }
 }
 
 #o-nas {
@@ -252,7 +293,7 @@ nav {
 
 nav .menu-container {
   height: 0;
-  width: 90%;
+  width: 92%;
   /*max-width: 1000px;*/
   margin: 0 auto;
   text-align: center;
