@@ -95,12 +95,12 @@ textarea {
 }
 
 html {
-  font-family: "Noto", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 24px;
   scroll-behavior: smooth;
   background-color: #151514;
   color: white;
-  /*scrollbar-gutter: stable both-edges;*/
+  scrollbar-gutter: stable both-edges;
 }
 
 section {
@@ -132,7 +132,7 @@ section {
 
 @media (min-width: 800px) {
   #home {
-    height: 60vw;
+    height: 53vw;
     background: no-repeat top/60% url("../img/hero-desktop.png");
   }
 }
@@ -140,22 +140,26 @@ section {
 #home h1 {
   padding-top: 31vw;
   padding-bottom: 0;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 7vw;
   height: 10vw;
   padding-left: 20vw;
   justify-items: center;
   text-align: center;
   margin-left: -20vw;
-  line-height: 1.1;
+  line-height: 1.2;
+}
+
+#home h1 strong {
+  font-weight: 800;
 }
 
 @media (min-width: 800px) {
   #home h1 {
     margin-left: -16vw;
-    padding-top: 32vw;
+    padding-top: 34vw;
     font-size: 3vw;
-    height: 60vw;
+    /*height: 60vw;*/
   }
 }
 
@@ -173,8 +177,14 @@ section {
 
 @media (min-width: 800px) {
   #home div {
-    padding-top: 0;
+    padding-top: 10vw;
   }
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 800px) {
 }
 
 @media (min-width: 800px) {
@@ -197,6 +207,7 @@ section {
 }
 
 #home div p {
+  font-weight: 100;
   padding-top: 4vw;
   padding-right: 1vw;
   font-size: 4vw;
@@ -204,14 +215,10 @@ section {
 
 @media (min-width: 800px) {
   #home div p {
-    padding-right: 30vw;
+    padding-top: 1vw;
+    padding-right: 41vw;
     font-size: 1vw;
   }
-}
-
-
-#home h1 strong {
-  font-weight: 900;
 }
 
 /*@media (min-width: 800px) {*/
