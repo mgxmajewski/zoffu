@@ -121,7 +121,7 @@ section {
 @media (min-width: 800px) {
   section {
     padding-left: 15vw;
-    padding-right: 15vw;
+    padding-right: 7vw;
   }
 }
 
@@ -159,7 +159,7 @@ section {
 
 @media (min-width: 800px) {
   #home h1 {
-    margin-left: -16vw;
+    margin-left: -28vw;
     padding-top: 34vw;
     font-size: 3vw;
     /*height: 60vw;*/
@@ -218,6 +218,7 @@ section {
 /*Z KIM NADAJEMY*/
 #z-kim-nadajemy {
   background-color: #151514;
+  padding-bottom: 8vw;
 }
 
 /*@media (min-width: 800px) {*/
@@ -261,7 +262,89 @@ section {
 
 /*O NAS*/
 #o-nas {
-  background-color: crimson;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  padding: 4vw 0;
+}
+
+#o-nas .person-wrapper {
+  display: grid;
+  justify-items: center;
+  color: black;
+  text-align: center;
+}
+
+#o-nas .person-wrapper img {
+  width: 50vw;
+  padding-top: 4vw;
+}
+
+#o-nas .person-wrapper:first-child img {
+  margin-top: -12vw;
+}
+
+#o-nas .person-wrapper h2 {
+  padding-top: 4vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+#o-nas .person-wrapper h3 {
+  /*text-transform: uppercase;*/
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+#o-nas .person-wrapper p {
+  /*text-transform: uppercase;*/
+  padding-top: 4vw;
+  width: 75vw;
+}
+
+@media (min-width: 800px) {
+  #o-nas {
+    display: none;
+  }
+  #o-nas .person-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  #o-nas .person-wrapper img {
+    width: auto;
+    padding-top: 4vw;
+  }
+
+  #o-nas .person-wrapper:first-child img {
+    margin-top: -12vw;
+  }
+
+    #o-nas .person-wrapper:nth-child(2) img {
+    margin-top: 12vw;
+  }
+
+  #o-nas .person-wrapper h2 {
+    padding-top: 4vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  #o-nas .person-wrapper h3 {
+    /*text-transform: uppercase;*/
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  #o-nas .person-wrapper p {
+    /*text-transform: uppercase;*/
+    padding-top: 4vw;
+    width: auto;
+  }
 }
 
 /*POSLUCHAJ*/
@@ -269,7 +352,6 @@ section {
   /*background-color: #14dca7;*/
   background-color: #151514;
   /*background-color: #ffffff;*/
-
   display: block;
 }
 
@@ -310,13 +392,16 @@ section {
   }
 }
 
-#posluchaj .video-wrapper{
+#posluchaj .video-wrapper {
   padding-top: 2vw;
   padding-bottom: 2vw;
   padding-right: 2vw;
-  max-width: 1100px;
-  /*width: 100vw;*/
-  /*background-color: white;*/
+}
+
+@media (min-width: 800px) {
+  #posluchaj .video-wrapper {
+    width: 70vw;
+  }
 }
 
 #posluchaj iframe {
@@ -330,12 +415,20 @@ section {
   background-color: #aa14dc;
 }
 
-footer{
+footer {
+  font-size: 3vw;
   border-top: 1px solid #474741;
   color: #474741;
   padding: .5vw 1vw 1vw 1vw;
-  font-weight: lighter;
+  /*font-weight: lighter;*/
   text-align: right;
+  text-transform: uppercase;
+}
+
+@media (min-width: 800px) {
+  footer {
+    font-size: 1vw;
+  }
 }
 
 nav {
@@ -348,12 +441,16 @@ nav {
 nav .menu-container {
   height: 0;
   width: 92%;
-  /*max-width: 1000px;*/
+  margin: 0 auto;
+}
+
+.bottom-border {
+  border-bottom: 1px solid white;
+  width: 92%;
   margin: 0 auto;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  /*padding: 10px;*/
 }
 
 .menu-container {
@@ -371,7 +468,7 @@ nav .menu-container {
 
 @media (min-width: 800px) {
   .menu-container ul {
-    padding: 2vw;
+    /*padding: 2vw;*/
     display: block;
   }
 }
@@ -383,8 +480,22 @@ nav .menu-container ul li {
 nav .menu-container ul li a {
   display: inline-block;
   text-decoration: none;
-  padding: 10px 20px;
+  padding-top: 50px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  scroll-margin-top: -200px;
+}
+
+#home,
+#z-kim-nadajemy,
+#o-nas,
+#posluchaj,
+#kontakt {
+  scroll-margin-top: 120px;
 }
 
 nav .menu-container ul li.active {
@@ -393,8 +504,15 @@ nav .menu-container ul li.active {
 }
 
 nav .menu-container ul li.active a {
-  color: rgb(148, 148, 148);
+  /*color: white;*/
 }
+
+/*a.anchor {*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    top: -250px;*/
+/*    visibility: hidden;*/
+/*}*/
 
 /* ==========================================================================
    Helper classes
