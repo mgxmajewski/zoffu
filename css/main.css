@@ -92,6 +92,10 @@ textarea {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  --heading-size-mobile: 6vw;
+  --heading-size-desktop: 1.7vw;
+  --p-size-mobile: 3.5vw;
+  --p-size-desktop: 1vw;
 }
 
 body {
@@ -128,7 +132,7 @@ section {
 
 #home {
   height: 130vw;
-  background: no-repeat top/90% url("../img/hero-mobile.png");
+  background: no-repeat top/90% url("../img/hero-img.png");
   display: grid;
   justify-items: center;
 }
@@ -136,12 +140,12 @@ section {
 @media (min-width: 800px) {
   #home {
     height: 53vw;
-    background: no-repeat top/60% url("../img/hero-desktop.png");
+    background: no-repeat top/60% url("../img/hero-img.png");
   }
 }
 
 #home h1 {
-  padding-top: 31vw;
+  padding-top: 15vw;
   padding-bottom: 0;
   font-weight: 400;
   font-size: 7vw;
@@ -185,12 +189,12 @@ section {
 
 /*HOME*/
 #home div h2 {
-  font-size: 6vw;
+  font-size: var(--heading-size-mobile)
 }
 
 @media (min-width: 800px) {
   #home div h2 {
-    font-size: 1.7vw;
+    font-size: var(--heading-size-desktop);
   }
 }
 
@@ -198,7 +202,7 @@ section {
   font-weight: 100;
   padding-top: 4vw;
   padding-right: 2vw;
-  font-size: 3.5vw;
+  font-size: var(--p-size-mobile);
 }
 
 @media (min-width: 800px) {
@@ -219,6 +223,8 @@ section {
 #z-kim-nadajemy {
   background-color: #151514;
   padding-bottom: 8vw;
+  display: grid;
+  justify-content: start;
 }
 
 /*@media (min-width: 800px) {*/
@@ -228,12 +234,12 @@ section {
 /*}*/
 
 #z-kim-nadajemy div h2 {
-  font-size: 6vw;
+  font-size: var(--heading-size-mobile)
 }
 
 @media (min-width: 800px) {
   #z-kim-nadajemy div h2 {
-    font-size: 1.7vw;
+    font-size: var(--heading-size-desktop);
     text-align: right;
     /*width: 50vw;*/
   }
@@ -245,7 +251,7 @@ section {
   padding-top: 4vw;
   padding-right: 14vw;
   text-align: left;
-  font-size: 3.5vw;
+  font-size: var(--p-size-mobile);
 }
 
 @media (min-width: 800px) {
@@ -286,6 +292,7 @@ section {
 
 #o-nas .person-wrapper h2 {
   padding-top: 4vw;
+  font-size: var(--heading-size-mobile);
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.1;
@@ -293,13 +300,14 @@ section {
 
 #o-nas .person-wrapper h3 {
   /*text-transform: uppercase;*/
-  font-size: 1.5rem;
+  font-size: var(--heading-size-mobile);
   font-weight: 700;
   line-height: 1.1;
 }
 
 #o-nas .person-wrapper p {
   /*text-transform: uppercase;*/
+  font-size: var(--p-size-mobile);
   padding-top: 4vw;
   width: 75vw;
 }
@@ -308,6 +316,7 @@ section {
   #o-nas {
     display: none;
   }
+
   #o-nas .person-wrapper {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -322,7 +331,7 @@ section {
     margin-top: -12vw;
   }
 
-    #o-nas .person-wrapper:nth-child(2) img {
+  #o-nas .person-wrapper:nth-child(2) img {
     margin-top: 12vw;
   }
 
@@ -342,6 +351,7 @@ section {
 
   #o-nas .person-wrapper p {
     /*text-transform: uppercase;*/
+    font-size: 1vw;
     padding-top: 4vw;
     width: auto;
   }
@@ -366,22 +376,22 @@ section {
   }
 }
 
-/*HOME*/
+/*POSLUCHAJ*/
 #posluchaj div h2 {
-  font-size: 6vw;
+  font-size: var(--heading-size-mobile);
 }
 
 @media (min-width: 800px) {
   #posluchaj div h2 {
-    font-size: 1.7vw;
+    font-size: var(--heading-size-desktop);
   }
 }
 
 #posluchaj div p {
   font-weight: 100;
-  padding-top: 4vw;
+  padding-bottom: 4vw;
   padding-right: 2vw;
-  font-size: 3.5vw;
+  font-size: var(--p-size-mobile);
 }
 
 @media (min-width: 800px) {
@@ -394,7 +404,7 @@ section {
 
 #posluchaj .video-wrapper {
   padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-bottom: 4vw;
   padding-right: 2vw;
 }
 
@@ -412,7 +422,33 @@ section {
 
 /*KONTAKT*/
 #kontakt {
-  background-color: #aa14dc;
+  /*background-color: #aa14dc;*/
+  background-color: #151514;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 3vw;
+  justify-content: start;
+  padding-bottom: 4vw;
+}
+
+#kontakt h2 {
+  padding-top: 4vw;
+  font-size: var(--heading-size-mobile);
+}
+
+#kontakt p {
+  font-size: var(--p-size-mobile);
+  font-weight: 100;
+  /*padding-top: 2vw;*/
+}
+
+#kontakt a {
+  /*font-size: var(--p-size-mobile);*/
+  /*font-weight: 100;*/
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  /*padding-top: 2vw;*/
 }
 
 footer {
